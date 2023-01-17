@@ -25,10 +25,9 @@ const handleSubmit = (event) => {
   setRecipeData({...initialRecipeState})
 }
 
-  // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
-  // TODO: Add the required input and textarea form elements.
-  // TODO: Add the required submit and change handlers
-  
+//added validation via required to ensure each field is filled in before creating a new recipe 
+//added placeholders for each field
+
   return (
     <form name="create" onSubmit={handleSubmit}>
       <table>
