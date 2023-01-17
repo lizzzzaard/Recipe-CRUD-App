@@ -1,5 +1,6 @@
 import React from "react";
 
+// this function displays the recipeData and the newly inputed data into the app and displays the delete button
 function RecipeRow ({recipe, deleteRecipe}) {
     return (
         <tr>
