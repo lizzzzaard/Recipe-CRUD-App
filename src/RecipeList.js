@@ -1,11 +1,8 @@
 import React from "react";
 import RecipeRow from "./RecipeRow";
 
+// this function displays the headers of the table and takes in the newly created component RecipeRow to display the recipes
 function RecipeList({ recipes, deleteRecipe}) {
-  
-  // TODO: Display the list of recipes using the structure of table that is provided.
-  // TODO: Create at least one additional component that is used by this component.
-  // TODO: Each recipe row must have a delete button - <button name="delete">Delete</button> - that deletes the post when clicked
 
   return (
     <div className="recipe-list">
