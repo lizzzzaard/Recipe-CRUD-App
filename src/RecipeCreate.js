@@ -3,11 +3,11 @@ import React, { useState } from "react";
 function RecipeCreate({createRecipe}) {
 
 const initialRecipeState = {
-  name: "Name",
-  cuisine: "Cuisine",
-  photo: "URL",
-  ingredients: "Ingredients",
-  preparation: "Preparation",
+  name: "",
+  cuisine: "",
+  photo: "",
+  ingredients: "",
+  preparation: "",
 }
 
 const [recipeData, setRecipeData] = useState({ ...initialRecipeState });
@@ -39,6 +39,8 @@ const handleSubmit = (event) => {
               id="name"
               name="name"
               type="text"
+              placeholder="Name"
+              required
               value={recipeData.name}
               onChange={handleChange}
               />
@@ -48,6 +50,8 @@ const handleSubmit = (event) => {
               id="cuisine"
               name="cuisine"
               type="text"
+              placeholder="Cuisine"
+              required
               value={recipeData.cuisine}
               onChange={handleChange}
               />
@@ -57,6 +61,8 @@ const handleSubmit = (event) => {
               id="photo"
               name="photo"
               type="text"
+              placeholder="URL"
+              required
               value={recipeData.photo}
               onChange={handleChange}
               />
@@ -65,6 +71,8 @@ const handleSubmit = (event) => {
               <textarea
               id="ingredients"
               name="ingredients"
+              placeholder="Ingredients"
+              required
               value={recipeData.ingredients}
               onChange={handleChange}
               />
@@ -73,6 +81,8 @@ const handleSubmit = (event) => {
               <textarea
               id="preparation"
               name="preparation"
+              placeholder="Preparation"
+              required
               value={recipeData.preparation}
               onChange={handleChange}
               />
